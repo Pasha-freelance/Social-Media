@@ -1,0 +1,43 @@
+.topWrapper{
+    width: 80vw;
+}
+.PersonInfo {
+    width: 100%;
+    height: 100%;
+}
+
+.Photo {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.Photo img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Name {
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+
+h5 {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.Description {
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+.contactLink{
+    color: rgba(0,0,0,.8) !important;
+    margin-right: 20px;
+}
+.contactLink:hover{
+    color: #2196F3 !important;
+}

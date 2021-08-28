@@ -1,0 +1,83 @@
+.Messages{
+    /*background:#448D76;*/
+    background: transparent;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 500px;
+    max-height: 700px;
+    align-self: flex-start;
+}
+.NickNames{
+    flex: 0 0 100px;
+    height: 100%;
+}
+.NameLink{
+    color: #093426;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+.NameLink:hover{
+    color: white;
+}
+.active{
+    color: white;
+}
+.ChatWithPerson{
+    background: #F7E1D0;
+    flex: 0 0 85%;
+    min-height: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+    overflow-y: scroll;
+
+}
+.MessageWrap{
+    text-align: right;
+}
+.Message{
+    padding: 10px;
+    border-radius: 25px;
+    color: #FC7005;
+    background: #5817C7;
+    margin: 5px 0;
+    display: inline-block;
+    max-width: 80%;
+}
+.DialogWindow{
+    flex: 0 0 85%;
+    max-width: 85%;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px; /* ширина для вертикального скролла */
+    height: 1px; /* высота для горизонтального скролла */
+    border-radius: 4px;
+    transition: .2s;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    width: 1px; /* ширина для вертикального скролла */
+    height: 1px; /* высота для горизонтального скролла */
+    border-radius: 4px;
+    transition: .2s;
+    background-color: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+   display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    display: none;
+}

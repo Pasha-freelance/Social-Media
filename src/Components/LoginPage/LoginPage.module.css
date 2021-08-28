@@ -1,0 +1,57 @@
+.LoginPage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F0F2F5;
+}
+.LoginInnerForm{
+    background: white;
+    padding: 30px 70px;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+
+.loginForm div{
+    margin: 5px auto;
+}
+
+.loginWrap {
+    background: transparent;
+}
+.loginWrap , .passwordWrap{
+    width: 95%;
+}
+
+.shrinkedLabel {
+    color: black !important;
+}
+
+.focusedInput *:after {
+    border-bottom: 2px solid black !important;
+}
+
+
+.rememberMeWrap {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.rememberMeLabel {
+    cursor: pointer !important;
+}
+
+.buttonSpace {
+    margin-right: 20px !important;
+}
+.incorrectLogin{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: red;
+}

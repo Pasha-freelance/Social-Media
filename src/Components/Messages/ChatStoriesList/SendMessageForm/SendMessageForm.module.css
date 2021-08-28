@@ -1,0 +1,40 @@
+.form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textarea{
+    min-width: 90%;
+    resize: none;
+    border-radius: 10px;
+    background: #5f88c1;
+    outline: none;
+    border:none;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana,sans-serif;
+}
+.sendBtn{
+    display: block;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transform: scale(1.1);
+    transition: .15s;
+}
+.sendBtn:active{
+    transform: scale(1);
+}
+.sendBtn:focus{
+    border: none;
+    outline: none;
+}
+.sendBtn img{
+    margin-top: -5px;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,113 @@
+.usersList{
+    padding-left: 50px;
+}
+h2{
+    text-align: center;
+}
+.end{
+    text-align: center;
+}
+.user {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.photoAndFollowBtnWrap {
+    min-width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usersPhotoWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.usersPhotoWrap img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.followBtn {
+    padding: 5px;
+    background: #9A0794;
+    color: white;
+    cursor:pointer;
+    border: none;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: .1s;
+}
+.followBtn:active{
+    transform: scale(1);
+}
+.followBtn:focus{
+    outline: none;
+}
+.disabledBtn{
+    position: relative;
+    background: rgba(255,255,255,.2);
+    border-radius: 10px;
+    z-index: 5;
+}
+.disabledBtn:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.userDescription {
+    color: #6b7477;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+            "name country"
+            "city city"
+            "status status";
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 20px 20px 20px ;
+}
+.name,.city,.country{
+    font-size: 15px;
+}
+.name{
+    grid-area: name;
+}
+.city{
+    grid-area: city;
+    text-align: right;
+}
+.country{
+    grid-area: country;
+    text-align: right;
+
+}
+.status{
+    grid-area: status;
+    font-size: 13px;
+}
+.btnWrap{
+    text-align: center;
+}
+.showMoreBtn{
+    font-size: 17px;
+}
+.profLink{
+    flex: 0 0 85%;
+    display: block;
+}

@@ -1,0 +1,1 @@
+export const toValidUrl = url => (url.includes('http://') || url.includes('https://')) ? url : `http://${url}`
