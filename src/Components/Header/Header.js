@@ -15,7 +15,7 @@ export default function HeaderComponent(props) {
                 <Button
                     icon={<ToolFilled />}
                     onClick={props.setConfigurableMode.bind(null,true)}
-                >Редактировать профиль</Button>
+                >Change profile</Button>
             </Menu.Item>
 
         </Menu>
@@ -44,7 +44,7 @@ export default function HeaderComponent(props) {
                         </Dropdown>
                     </Col>
                     <Col span={1}>
-                        <Tooltip title={"Выйти"}>
+                        <Tooltip title={"Log out"}>
                             <Button
                                 icon={<LogoutOutlined style={{color: 'white', fontSize: '20px'}}
                                                       rotate={'-90'}/>}

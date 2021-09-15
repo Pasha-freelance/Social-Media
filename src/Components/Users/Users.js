@@ -17,7 +17,7 @@ export default function Users(props) {
 
     return (
         <Space direction={'vertical'} align={'center'} style={{width:'100%',padding:'20px'}}>
-            <Typography.Title level={2} style={{textAlign:'center'}}>Пользователи</Typography.Title>
+            <Typography.Title level={2} style={{textAlign:'center'}}>Users</Typography.Title>
 
             {props.end && <h4 className={style.end}>This is the end</h4>}
 
@@ -31,7 +31,7 @@ export default function Users(props) {
                 type={props.isFetching ? 'ghost' : 'primary'}
                 icon={<RedoOutlined />}
             >
-                Показать еще
+                Show more
             </Button>
         </Space>
     )

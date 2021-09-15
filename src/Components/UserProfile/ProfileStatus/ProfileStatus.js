@@ -54,7 +54,7 @@ export default function ProfileStatus(props) {
 
             </Col>
             <Col style={{...layoutStyle.col2}}>
-                <Tooltip title={'Сохранить статус'}>
+                <Tooltip title={'Save'}>
                     <Button icon={<SaveFilled/>}
                             size='small'
                             style={{background: 'transparent', border: 'none'}}

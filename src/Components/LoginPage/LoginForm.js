@@ -11,12 +11,12 @@ export default function LoginForm(props) {
     };
 
     const validateEmail = value => {
-        if (!value.length) return 'Это поле обязательное'
-        if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value)) return 'Введите корректный Email'
+        if (!value.length) return 'Required'
+        if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value)) return 'Incorrect email'
     }
     const validatePassword = value => {
-        if (!value.length) return 'Это поле обязательное'
-        if (value.length <= 3) return 'Пароль слишком короткий'
+        if (!value.length) return 'Required'
+        if (value.length <= 3) return 'Password is too short'
     }
 
 
@@ -37,7 +37,7 @@ export default function LoginForm(props) {
                 <Form>
                     <Field name={'email'} validate={value => validateEmail(value)}>
                         {() => <AntdForm.Item
-                            label="Логин"
+                            label="Login"
                             labelCol={{offset: 1}}
                             type="email"
                             colon={false}
@@ -45,7 +45,7 @@ export default function LoginForm(props) {
                             help={props.errors.email}
                         >
                             <Input name="email"
-                                   placeholder={'Введите ваш логин'}
+                                   placeholder={'Enter your login'}
                                    value={props.values.email}
                                    onChange={props.handleChange}
                                    onBlur={props.handleBlur}
@@ -55,7 +55,7 @@ export default function LoginForm(props) {
                     </Field>
                     <Field name={'password'} validate={value => validatePassword(value)}>
                         {() => <AntdForm.Item
-                            label="Пароль"
+                            label="Password"
                             type={'password'}
                             labelCol={{offset: -5}}
                             colon={false}
@@ -63,7 +63,7 @@ export default function LoginForm(props) {
                             help={props.errors.password}
                         >
                             <Input.Password name="password"
-                                            placeholder={'Введите пароль'}
+                                            placeholder={'Enter password'}
                                             value={props.values.password}
                                             onChange={props.handleChange}
                                             onBlur={props.handleBlur}
@@ -79,7 +79,7 @@ export default function LoginForm(props) {
                                   checked={props.values.rememberMe}
                                   onChange={props.handleChange}
                                   onBlur={props.handleBlur}
-                        >Запомнить меня</Checkbox>
+                        >Remember me</Checkbox>
                     </AntdForm.Item>
 
                     <AntdForm.Item {...tailLayout}>
@@ -88,7 +88,7 @@ export default function LoginForm(props) {
                                 shape={'round'}
                                 size={'large'}
                         >
-                            Войти
+                            Log In
                         </Button>
                     </AntdForm.Item>
                 </Form>

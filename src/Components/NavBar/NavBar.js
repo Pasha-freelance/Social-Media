@@ -27,14 +27,14 @@ function NavigationBar(props) {
             <Menu
                 mode="inline"
                 defaultSelectedKeys={defaultSelectedKey}
-                defaultOpenKeys={['Профиль']}
+                defaultOpenKeys={['Profile']}
                 style={{height: '100%', borderRight: 0}}
             >
-                <SubMenu key="Профиль" icon={<UserOutlined/>} title="Профиль">
-                    <Menu.Item key="1"><Link to={'/myProfile'}>Мой профиль</Link></Menu.Item>
-                    <Menu.Item key="2"><Link to={'/messages'}>Сообщения</Link></Menu.Item>
+                <SubMenu key="Profile" icon={<UserOutlined/>} title="Profile">
+                    <Menu.Item key="1"><Link to={'/myProfile'}>My profile</Link></Menu.Item>
+                    <Menu.Item key="2"><Link to={'/messages'}>Messages</Link></Menu.Item>
                 </SubMenu>
-                <Menu.Item icon={<TeamOutlined/>} key="3"><Link to={'/users'}>Пользователи</Link></Menu.Item>
+                <Menu.Item icon={<TeamOutlined/>} key="3"><Link to={'/users'}>Users</Link></Menu.Item>
             </Menu>
         </Sider>
     )

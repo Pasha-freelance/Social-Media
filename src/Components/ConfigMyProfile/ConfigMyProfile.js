@@ -25,13 +25,13 @@ const ConfigMyProfile = props => {
     return (
         <>
             <Modal
-                title="Редактировать профиль"
+                title="Change profile"
                 visible={true}
                 centered={true}
                 maskClosable={true}
                 onCancel={cancelHandler}
-                cancelText={'Отмена'}
-                okText={'Ок'}
+                cancelText={'Cancel'}
+                okText={'Ok'}
                 onOk={okHandler}
                 destroyOnClose={true}
             >
@@ -83,27 +83,27 @@ const ConfigInner = (props) => {
         <>
             <Row {...antRowAttr} style={{...rowStyle}}>
                 <Col>
-                    <Title level={5}>Обо мне </Title>
+                    <Title level={5}>About me </Title>
                 </Col>
                 <Col>
-                    <Button onClick={() => setAboutMeModalVisibility(true)}>Изменить</Button>
+                    <Button onClick={() => setAboutMeModalVisibility(true)}>Change</Button>
                 </Col>
             </Row>
 
             <Row {...antRowAttr} style={{...rowStyle}}>
                 <Col>
                     <Row>
-                        <Title level={5}>Имя </Title>
+                        <Title level={5}>Name </Title>
                         <Text type={"success"} style={{margin: '2px 25px'}}>{nickname}</Text>
                     </Row>
                 </Col>
                 <Col>
-                    <Button onClick={() => setNickNameModalVisibility(true)}>Изменить</Button>
+                    <Button onClick={() => setNickNameModalVisibility(true)}>Change</Button>
                 </Col>
             </Row>
 
             <Row {...antRowAttr} style={{...rowStyle}}>
-                <Title level={5}>Ищу работу</Title>
+                <Title level={5}>Looking for a job</Title>
                 <Switch checked={lookingForAJob}
                         onChange={(isChecked) => setLookingForAJob(isChecked)}
                 />
@@ -112,11 +112,11 @@ const ConfigInner = (props) => {
             <Row {...antRowAttr} style={{...rowStyle}}>
                 <Col>
                     <Row>
-                        <Title level={5}>Мои контакты </Title>
+                        <Title level={5}>My contacts </Title>
                     </Row>
                 </Col>
                 <Col>
-                    <Button onClick={() => setContactsModalVisibility(true)}>Изменить</Button>
+                    <Button onClick={() => setContactsModalVisibility(true)}>Change</Button>
                 </Col>
             </Row>
 

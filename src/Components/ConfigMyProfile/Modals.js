@@ -27,7 +27,7 @@ export const ChangeContactsModal = ({setVisibility, contacts, setContacts}) => {
     }
     return (
         <Modal
-            title="Здесь вы можете именить ссылки на свои соцсети"
+            title="Here you can change your links"
             visible={true}
             centered={true}
             closable={false}
@@ -49,8 +49,8 @@ export const ChangeContactsModal = ({setVisibility, contacts, setContacts}) => {
                 <Row justify={'space-around'}
                      align={'center'}
                      style={{paddingTop: '10px'}}>
-                    <Button type='danger' onClick={cancelHandler} >Отмена</Button>
-                    <Button htmlType='submit' type='primary'>Подтвердить</Button>
+                    <Button type='danger' onClick={cancelHandler} >Cancel</Button>
+                    <Button htmlType='submit' type='primary'>Confirm</Button>
                 </Row>
             </form>
         </Modal>
@@ -61,7 +61,7 @@ export const TextModal = ({setVisibility, setModalText,defaultValue}) => {
     const [text, setText] = useState(defaultValue)
     return (
         <Modal
-            title="Напишите что-нибудь о себе"
+            title="Write something about yourself"
             visible={true}
             centered={true}
             maskClosable={true}
@@ -70,8 +70,8 @@ export const TextModal = ({setVisibility, setModalText,defaultValue}) => {
                 setModalText(text)
                 setVisibility(false)
             }}
-            cancelText={'Отмена'}
-            okText={'Ок'}
+            cancelText={'Cancel'}
+            okText={'Ok'}
         >
             <TextArea
                 allowClear={true}
@@ -80,7 +80,7 @@ export const TextModal = ({setVisibility, setModalText,defaultValue}) => {
                 value={text}
                 autoSize={true}
                 onChange={(e) => setText(e.target.value)}
-                placeholder={'Напишите что-то...'}
+                placeholder={'Type...'}
             />
         </Modal>
     )

@@ -21,7 +21,7 @@ export default function UserItem(props) {
     return (
         <Card style={{width: '500px',background:'transparent'}}>
             <Row justify={'center'}>
-                <Tooltip title='Перейти к профилю' arrowPointAtCenter={true}>
+                <Tooltip title='Show profile' arrowPointAtCenter={true}>
                     <NavLink to={`/users/profile/${props.user.id}`}>
                         <Avatar size={50}
                                 src={props.user.photos.small ?? noPhoto}/>
@@ -40,7 +40,7 @@ export default function UserItem(props) {
                         icon={props.user.followed ? <UserDeleteOutlined />:<UserAddOutlined />}
                 >
                     {
-                        props.user.followed ? 'Отписаться' : 'Подписаться'
+                        props.user.followed ? 'Unsubscribe' : 'Subscribe'
                     }
                 </Button>
             </Row>

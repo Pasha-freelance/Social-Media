@@ -69,7 +69,7 @@ export default function UserInfo(props) {
                             accept={"image/png, image/jpeg"}
                             onChange={info => onMainPhotoSelected(info)}
                         >
-                            <Tooltip title={"Загрузить новое фото"}>
+                            <Tooltip title={"Upload new photo"}>
                                 <Button icon={<CameraOutlined/>}/>
                             </Tooltip>
                         </Upload>
@@ -87,17 +87,17 @@ export default function UserInfo(props) {
                 UserInfo.lookingForAJob
                     ? <>
                         <Typography.Title style={{textAlign: 'center'}}
-                                          level={3} type="success">В поиске работы</Typography.Title>
+                                          level={3} type="success">Looking for a job</Typography.Title>
                         <Typography.Paragraph
                             style={{textAlign: 'center'}}>{UserInfo.lookingForAJobDescription}</Typography.Paragraph>
                     </>
                     :
                     <Typography.Title style={{textAlign: 'center'}}
-                                      level={3} type="warning">Уже работаю</Typography.Title>
+                                      level={3} type="warning">Already work</Typography.Title>
             }
             {
                 Object.values(UserInfo.contacts).some(el => !!el) &&
-                <Typography.Title level={4} type={'secondary'}>Связь со мной :</Typography.Title>
+                <Typography.Title level={4} type={'secondary'}>Contacts :</Typography.Title>
             }
             {
                 /*Contacts*/
